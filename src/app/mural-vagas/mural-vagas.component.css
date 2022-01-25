@@ -6,3 +6,10 @@
     margin: 5px 10px;
     min-height: 300px;
 }
+
+
+.card-img-top {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
