@@ -1,5 +1,5 @@
-
-<nav class="navbar navbar-expand-lg navbar- bg-dark">
+<section class="menu">
+<nav class="navbar navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">LH VAGAS</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,17 +8,50 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home!</a>
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/mural">Mural!</a>
+          <a class="nav-link" routerLink="/mural">Mural</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/painel">Painel!</a>
+          <a class="nav-link" routerLink="/painel">Painel</a>
+        </li>
+        <li class="nav-item-disable">
+          <a class="nav-link" routerLink="/painel">Em breve...</a>
         </li>
       
-        
       </ul>
     </div>
+ 
   </div>
 </nav>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://sociisrh.com.br/wp-content/uploads/2020/08/Inovando-o-RH-entenda-a-import%C3%A2ncia-de-ter-um-RH-inovador-na-sua-empresa.jpg" height="700" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.ticket.com.br/blog/wp-content/uploads/sites/5/2020/01/gestor-recursos-humanos-20190102.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.employer.com.br/blog/wp-content/uploads/2016/12/saiba-como-otimizar-o-tempo-gasto-nas-tarefas-de-rh-da-empresa.jpeg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  
+</section>
