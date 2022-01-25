@@ -28,7 +28,7 @@ export class PainelVagasComponent implements OnInit {
   }
 
   atualizar(id: number){
-    this._vagasService.atualizarVaga(id,this.vaga).subscribe(
+    this._vagasService.atualizarVaga(id,this.vaga).subscribe (
       vaga => {this.vaga = new Vaga(0,"","","",0)},
       err => {console.log("erro ao atualizar")}
     );
@@ -38,7 +38,7 @@ export class PainelVagasComponent implements OnInit {
   }
 
   excluir(id: number){
-    this._vagasService.removerVaga(id).subscribe (
+    this._vagasService.removerVaga(id).subscribe(
       vaga => {this.vaga = new Vaga(0,"","","",0)},
       err => {console.log("erro ao Excluir")}
     );

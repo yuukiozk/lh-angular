@@ -1,15 +1,58 @@
+<br>
 <h2>Cadastrar</h2>
+<br>
+
+<section class= "testeform">
 <form>
-    <label>Id</label><input type="text" name="id" [(ngModel)] = "vaga.id"><br>
-    <label>Nome</label><input type="text" name="nome" [(ngModel)] = "vaga.nome"><br>
-    <label>Foto</label><input type="text" name="foto" [(ngModel)] = "vaga.foto"><br>
-    <label>Descrição</label><input type="text" name="descricao" [(ngModel)] = "vaga.descricao"><br>
-    <label>Salário</label><input type="text" name="salario" [(ngModel)] = "vaga.salario"><br>
-    <button type="button" (click)="cadastrar()">Cadastrar Vaga</button>
-    <button type="button" (click)="atualizar(vaga.id)">Atualizar Vaga</button>
-    <button type="button" (click)="excluir(vaga.id)">Excluir Vaga</button>
-</form>
-   
+
+    <div class="form-group">
+      <label for="formGroupExampleInput"> ID </label>
+      <input type="text" [(ngModel)] = "vaga.id"class="form-control" id="formGroupExampleInput" placeholder="Digite o id"   oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+    </div>
+
+
+<br>
+
+
+    <div class="form-group">
+      <label for="formGroupExampleInput2">Nome</label>
+      <input type="text" class="form-control"name="nome" [(ngModel)] = "vaga.nome" id="formGroupExampleInput2" placeholder="Nome da Vaga">
+    </div>
+
+    <BR>
+    <div class="form-group">
+        <label for="exampleFormControlFile1">Insira a foto</label>
+        <input type="file" name="foto" [(ngModel)] = "vaga.foto" class="form-control-file" id="exampleFormControlFile1">
+      </div>
+
+
+<BR>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text">R$</span>
+        <input type="text" name="salario" [(ngModel)] = "vaga.salario" class="form-control" aria-label="Dollar amount (with dot and two decimal places)"   oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+      </div>
+
+      <BR>
+
+
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Insira a Descrição</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+
+      <BR>
+
+      <button type="button" class="btn btn-outline-primary"(click)="atualizar(vaga.id)">Atualizar Vaga</button>
+      <button type="button" class="btn btn-outline-success"(click)="cadastrar()">Cadastrar Vaga</button>
+      <button type="button" class="btn btn-outline-danger"(click)="excluir(vaga.id)">Excluir Vaga</button>
+    
+  </form>
+  <br>  <br>
+</section>
+
+
+
 
 <section class="lista-vagas">
     <div *ngFor="let vaga of vagas">
@@ -28,4 +71,10 @@
           </div>
     
     </div>
+
+
+
+    
+
+
 </section>

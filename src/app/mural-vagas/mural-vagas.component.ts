@@ -16,23 +16,23 @@ export class MuralVagasComponent implements OnInit {
   ngOnInit(): void {
     this.listarVagas();
   }
-  listarVagas(){
-      this._vagasService.getVagas()
-        .subscribe (
-          retornaVaga =>{
-            this.vagas = retornaVaga.map(
-              item=>{
-                return new Vaga(
-                  item.id,
-                  item.nome,
-                  item.foto,
-                  item.descricao,
-                  item.salario
-                );
 
-              }
-            )
-          }
-        )
+  listarVagas(){
+    this._vagasService.getVagas()
+      .subscribe(
+        retornaVaga => {
+          this.vagas = retornaVaga.map(
+            item=>{
+              return new Vaga(
+                item.id,
+                item.nome,
+                item.foto,
+                item.descricao,
+                item.salario
+              );
+            }
+          )
+        }
+      )
   }
 }
