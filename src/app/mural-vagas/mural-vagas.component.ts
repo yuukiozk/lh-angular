@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Vaga } from '../models/Vagas.model';
 import { VagasService } from '../vagas.service';
+import { Vaga } from '../models/Vagas.model';
 
 @Component({
   selector: 'app-mural-vagas',
