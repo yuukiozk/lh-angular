@@ -4,7 +4,7 @@ import { MuralVagasComponent } from '../mural-vagas/mural-vagas.component';
 import { PainelVagasComponent } from '../painel-vagas/painel-vagas.component';
 
 const routes: Routes = [
-  {path: 'mural-vagas', component: MuralVagasComponent },
+  {path: 'mural', component: MuralVagasComponent },
   {path: 'painel', component: PainelVagasComponent },
   {path:'',redirectTo:'/mural', pathMatch:'full'}
 ]

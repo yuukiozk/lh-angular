@@ -7,7 +7,7 @@
 
     <div class="form-group">
       <label for="formGroupExampleInput"> ID </label>
-      <input type="text" [(ngModel)] = "vaga.id"class="form-control" id="formGroupExampleInput" placeholder="Digite o id"   oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+      <input type="text" [(ngModel)] = "vaga.id"class="form-control" id="formGroupExampleInput" placeholder="Digite o id desejado"   oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
     </div>
 
 
@@ -15,8 +15,8 @@
 
 
     <div class="form-group">
-      <label for="formGroupExampleInput2">Nome</label>
-      <input type="text" class="form-control"name="nome" [(ngModel)] = "vaga.nome" id="formGroupExampleInput2" placeholder="Nome da Vaga">
+      <label for="formGroupExampleInput2">Nome da Vaga</label>
+      <input type="text" class="form-control"name="nome" [(ngModel)] = "vaga.nome" id="formGroupExampleInput2" placeholder="Digite o Nome da Vaga desejado">
     </div>
 
     <BR>
