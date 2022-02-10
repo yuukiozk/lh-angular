@@ -2,7 +2,7 @@
 
 Projeto para a atividade do Senai EAD Situação com a linguagem Angular.
 
-Colocando em foco o Angular x Bootstrap x Java Script x CSS x NodeJS
+Colocando em foco o Angular x Bootstrap x Java Script x CSS3 x NodeJS x TypeScript
 
 
 
